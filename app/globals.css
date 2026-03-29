@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-body text-gray-900 bg-off-white;
+  }
+  h1, h2, h3, h4 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-sky/30 rounded-2xl;
+  }
+}
+
+/* Hover-only lift effect — prevents sticky hover on touch */
+@media (hover: hover) and (pointer: fine) {
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 20px 50px rgba(14, 116, 144, 0.18),
+      0 0 40px rgba(14, 116, 144, 0.06);
+  }
+}
+
+/* Wave divider animations — two layers scroll in opposite directions */
+@keyframes wave-flow-fwd {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes wave-flow-rev {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.animate-wave-front {
+  animation: wave-flow-fwd 12s linear infinite;
+}
+.animate-wave-back {
+  animation: wave-flow-rev 18s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
