@@ -33,4 +33,18 @@ export default function Home() {
         <OurStory />
         <WaveDivider from="off-white" to="navy" />
         <Programs />
-        <
+        <WaveDivider from="navy" to="off-white" />
+        <DonationTiers />
+        <WaveDivider from="off-white" to="navy" />
+        <CharterPricing />
+        <WaveDivider from="navy" to="off-white" />
+        <Gallery />
+        <WaveDivider from="off-white" to="navy" />
+        <SocialFeed />
+        <WaveDivider from="navy" to="off-white" />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  )
+}

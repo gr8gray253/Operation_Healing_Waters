@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${lora.variable} ${raleway.variable}`}>
-      <body className="font-raleway antialiased">
+      <body className="antialiased">
         {children}
       </body>
     </html>

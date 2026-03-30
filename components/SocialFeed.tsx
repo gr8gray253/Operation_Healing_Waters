@@ -88,4 +88,20 @@ export default function SocialFeed() {
               className="inline-flex items-center gap-2 font-body text-sm font-medium text-gray-500 hover:text-teal transition-colors cursor-pointer"
             >
               View on Instagram
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polylin
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="13 3 23 3 23 13"/><line x1="23" y1="3" x2="13" y2="13"/></svg>
+            </a>
+            <a
+              href="https://www.tiktok.com/@reelofishal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 font-body text-sm font-medium text-gray-500 hover:text-teal transition-colors cursor-pointer"
+            >
+              Follow on TikTok
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="13 3 23 3 23 13"/><line x1="23" y1="3" x2="13" y2="13"/></svg>
+            </a>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  )
+}

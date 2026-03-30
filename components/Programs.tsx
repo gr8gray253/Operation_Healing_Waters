@@ -73,4 +73,14 @@ export default function Programs() {
                 </div>
                 <h3 className="font-heading text-2xl text-white font-semibold">{p.headline}</h3>
                 <p className="font-body text-white/80 leading-relaxed text-base">{p.body}</p>
-                <span className={`inline-flex self-start items-center border rounded-full px-4 py-1.5 font-body text-xs
+                <span className={`inline-flex self-start items-center border rounded-full px-4 py-1.5 font-body text-xs font-medium ${p.badgeColor}`}>
+                  {p.badge}
+                </span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

@@ -179,4 +179,11 @@ export default function Contact() {
           <div className="glass-card p-6">
             <p className="font-body text-white/85 text-sm leading-relaxed">
               <span className="text-gold font-semibold">If you&apos;ve served, you ride free.</span>{' '}
-            
+              We believe veterans have given enough. Every trip for someone who&apos;s served is our way of saying thank you.
+            </p>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  )
+}

@@ -89,4 +89,7 @@ export default function ImpactStrip() {
       </div>
 
       {/* Subtle wave divider bottom */}
-      <div className="absolute bottom-0 left-0 right-0 
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal/30 to-transparent" />
+    </section>
+  )
+}

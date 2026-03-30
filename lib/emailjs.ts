@@ -27,4 +27,7 @@ export async function sendContactEmail(data: ContactFormData): Promise<void> {
       is_veteran: data.isVeteran,
       message:    data.message,
       reply_to:   data.email,
-    },
+    },
+    EMAILJS_PUBLIC_KEY,
+  )
+}

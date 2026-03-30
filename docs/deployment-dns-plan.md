@@ -117,20 +117,9 @@ Checklist (from `cli-handoff-2026-03-26-deploy.md`):
 
 ---
 
-## Step 5: Git History Cleanup
+## ~~Step 5: Git History Cleanup~~ — COMPLETED 2026-03-29
 
-Before making the repo public (if it isn't already):
-
-```bash
-# Install git-filter-repo (pip install git-filter-repo)
-git filter-repo --path CLAUDE.md --invert-paths
-
-# This rewrites history to remove CLAUDE.md from ALL commits
-# Then force-push to GitHub:
-git push origin master --force
-```
-
-**Why:** CLAUDE.md was committed in `237a608` with client contact info (email, phone). It was removed in a later commit, but remains in git history.
+Fresh orphan commit (`ca65252`) created and force-pushed to `main`. Old 30+ commit history containing CLAUDE.md with client contact info is gone. Repo now has single clean commit.
 
 ---
 

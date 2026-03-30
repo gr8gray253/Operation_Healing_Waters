@@ -109,4 +109,14 @@ export default function Gallery() {
                 ref={closeBtnRef}
                 onClick={() => setLightbox(null)}
                 aria-label="Close image"
-                className="
+                className="absolute -top-12 right-0 text-white/70 hover:text-white transition-colors p-2 focus:outline-none focus:ring-2 focus:ring-gold rounded-lg"
+              >
+                <X size={28} />
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </section>
+  )
+}

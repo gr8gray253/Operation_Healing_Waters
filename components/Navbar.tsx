@@ -122,4 +122,12 @@ export default function Navbar() {
               rel="noopener noreferrer"
               onClick={closeMenu}
               className="bg-gold hover:bg-yellow-500 text-navy font-body font-bold text-lg px-8 py-4 rounded-2xl transition-colors duration-200 cursor-pointer"
-      
+            >
+              Donate Now
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  )
+}

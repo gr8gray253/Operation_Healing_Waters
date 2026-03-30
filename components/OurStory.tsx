@@ -89,4 +89,13 @@ export default function OurStory() {
                 key={label}
                 className="inline-flex items-center gap-2 bg-teal/8 text-teal border border-teal/20 rounded-full px-4 py-1.5 font-body text-xs font-medium"
               >
-       
+                <Icon size={14} aria-hidden="true" />
+                {label}
+              </span>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  )
+}

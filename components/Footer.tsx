@@ -110,4 +110,10 @@ export default function Footer() {
           </p>
           <p className="font-body text-white/50 text-xs hidden sm:block">·</p>
           <p className="font-body text-white/50 text-xs">
- 
+            Privacy &amp; Terms
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}

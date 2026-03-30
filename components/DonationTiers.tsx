@@ -99,4 +99,11 @@ export default function DonationTiers() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block font-body font-semibold text-sm text-teal border border-teal/30 rounded-xl px-6 py-2.5 hover:bg-teal hover:text-white transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-teal"
-          
+          >
+            Start Donating
+          </a>
+        </motion.div>
+      </div>
+    </section>
+  )
+}

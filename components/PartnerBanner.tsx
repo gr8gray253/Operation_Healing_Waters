@@ -38,4 +38,7 @@ export default function PartnerBanner() {
           Visit BayouCharity.org
           <ExternalLink size={14} aria-hidden="true" />
         </a>
- 
+      </motion.div>
+    </section>
+  )
+}

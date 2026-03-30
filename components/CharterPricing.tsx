@@ -71,4 +71,10 @@ export default function CharterPricing() {
             href="#contact"
             className="inline-block bg-teal hover:bg-teal/90 text-white font-body font-bold text-base px-8 py-4 rounded-full transition-colors duration-200 cursor-pointer shadow-md shadow-teal/20 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-teal focus:ring-offset-2"
           >
-            Book Your Tri
+            Book Your Trip
+          </a>
+        </motion.div>
+      </div>
+    </section>
+  )
+}

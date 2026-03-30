@@ -130,4 +130,12 @@ export default function SideNav() {
         </a>
         <a
           href="#contact"
-          className={activeHash === '#contact' ? 'text-tea
+          className={activeHash === '#contact' ? 'text-teal' : 'text-white/60'}
+          aria-label="Contact"
+        >
+          <Mail size={22} />
+        </a>
+      </nav>
+    </>
+  )
+}

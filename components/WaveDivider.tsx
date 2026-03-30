@@ -29,6 +29,23 @@ export default function WaveDivider({ from, to }: Props) {
       aria-hidden="true"
       style={{ background: top }}
     >
+      <style>{`
+        @keyframes wave-back {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        @keyframes wave-flow-fwd {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(50%); }
+        }
+        .animate-wave-back {
+          animation: wave-back 20s linear infinite;
+        }
+        .animate-wave-front {
+          animation: wave-flow-fwd 15s linear infinite reverse;
+        }
+      `}</style>
+
       {/* Layer 1 — deep back, slow reverse, visible teal */}
       <svg
         viewBox="0 0 2880 96"
@@ -74,4 +91,10 @@ export default function WaveDivider({ from, to }: Props) {
         <path
           d="M0,72 C140,46 320,92 520,70 C720,46 940,90 1140,68
              C1340,46 1560,92 1760,70 C1960,46 2180,90 2400,70
-             C2580,50 2740,88 2880,70 L288
+             C2580,50 2740,88 2880,70 L2880,96 L0,96 Z"
+          fill={bot}
+        />
+      </svg>
+    </div>
+  )
+}

@@ -14,4 +14,5 @@ export const SOCIAL = {
   tiktok: 'https://www.tiktok.com/@reelofishal',
   instagram: 'https://www.instagram.com/reel.ofishal',
   tiktokHandle: '@reelofishal',
-  instagramHandle: '@reel.ofish
+  instagramHandle: '@reel.ofishal',
+} as const
