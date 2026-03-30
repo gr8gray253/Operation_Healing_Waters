@@ -1,9 +1,8 @@
 /**
- * WaveDivider — Variation 1: "Deeper Teal"
+ * WaveDivider — Smooth organic waves between sections
  *
- * 3 wave layers: deep-back (teal 0.40), mid (teal 0.20), front (destination)
- * More irregular, organic bezier curves — varying crest heights
- * Taller container (h-24 / md:h-32) for more breathing room
+ * 3 SVG wave layers with gentle bezier curves, staggered animation speeds,
+ * and a taller container for a natural, flowing transition.
  */
 
 const colorMap: Record<string, string> = {
@@ -25,76 +24,66 @@ export default function WaveDivider({ from, to }: Props) {
 
   return (
     <div
-      className="relative h-24 md:h-32 overflow-hidden"
+      className="relative w-full overflow-hidden"
       aria-hidden="true"
-      style={{ background: top }}
+      style={{ background: top, height: 'clamp(80px, 12vw, 160px)' }}
     >
-      <style>{`
-        @keyframes wave-back {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        @keyframes wave-flow-fwd {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(50%); }
-        }
-        .animate-wave-back {
-          animation: wave-back 20s linear infinite;
-        }
-        .animate-wave-front {
-          animation: wave-flow-fwd 15s linear infinite reverse;
-        }
-      `}</style>
-
-      {/* Layer 1 — deep back, slow reverse, visible teal */}
+      {/* Layer 1 — deep back, slowest, subtle teal wash */}
       <svg
-        viewBox="0 0 2880 96"
-        className="absolute bottom-0 h-full animate-wave-back"
-        style={{ width: '200%' }}
+        viewBox="0 0 1440 200"
+        className="absolute bottom-0 w-[200%] h-full"
         preserveAspectRatio="none"
+        style={{ animation: 'waveDrift 25s linear infinite' }}
       >
         <path
-          d="M0,62 C200,28 460,88 720,58 C980,28 1180,82 1440,58
-             C1700,28 1900,88 2160,58 C2420,28 2660,82 2880,58
-             L2880,96 L0,96 Z"
+          d="M0,120 C120,80 240,160 360,130 C480,100 600,155 720,125
+             C840,95 960,160 1080,128 C1200,96 1320,150 1440,120
+             L1440,200 L0,200 Z"
           fill="#0E7490"
-          fillOpacity="0.40"
+          fillOpacity="0.25"
         />
       </svg>
 
-      {/* Layer 2 — mid, slightly faster, organic offset */}
+      {/* Layer 2 — mid layer, medium speed, offset rhythm */}
       <svg
-        viewBox="0 0 2880 96"
-        className="absolute bottom-0 h-full"
-        style={{
-          width: '200%',
-          animation: 'wave-flow-fwd 15s linear infinite',
-        }}
+        viewBox="0 0 1440 200"
+        className="absolute bottom-0 w-[200%] h-full"
         preserveAspectRatio="none"
+        style={{ animation: 'waveDrift 18s linear infinite reverse' }}
       >
         <path
-          d="M0,68 C160,42 380,90 600,66 C820,42 1060,86 1280,64
-             C1500,42 1720,90 1940,66 C2160,42 2400,88 2620,66
-             L2880,66 L2880,96 L0,96 Z"
+          d="M0,140 C100,105 220,165 380,135 C540,105 660,170 820,140
+             C980,110 1100,168 1260,138 C1340,122 1400,155 1440,140
+             L1440,200 L0,200 Z"
           fill="#0E7490"
-          fillOpacity="0.20"
+          fillOpacity="0.15"
         />
       </svg>
 
-      {/* Layer 3 — front, destination fill */}
+      {/* Layer 3 — front, destination color, fastest */}
       <svg
-        viewBox="0 0 2880 96"
-        className="absolute bottom-0 h-full animate-wave-front"
-        style={{ width: '200%' }}
+        viewBox="0 0 1440 200"
+        className="absolute bottom-0 w-[200%] h-full"
         preserveAspectRatio="none"
+        style={{ animation: 'waveDrift 14s linear infinite' }}
       >
         <path
-          d="M0,72 C140,46 320,92 520,70 C720,46 940,90 1140,68
-             C1340,46 1560,92 1760,70 C1960,46 2180,90 2400,70
-             C2580,50 2740,88 2880,70 L2880,96 L0,96 Z"
+          d="M0,155 C80,125 200,175 340,150 C480,125 580,170 720,148
+             C860,126 1000,172 1140,150 C1280,128 1380,165 1440,150
+             L1440,200 L0,200 Z"
           fill={bot}
         />
       </svg>
+
+      <style>{`
+        @keyframes waveDrift {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .wave-layer { animation: none !important; }
+        }
+      `}</style>
     </div>
   )
 }

@@ -37,12 +37,12 @@ export default function SideNav() {
 
   return (
     <>
-      {/* ─── Desktop: Fixed left pill sidebar ─── */}
+      {/* ─── Desktop: Fixed RIGHT pill sidebar ─── */}
       <aside
-        className="hidden lg:flex fixed left-0 top-1/2 -translate-y-1/2 h-fit flex-col p-6 z-50"
+        className="hidden lg:flex fixed right-4 top-1/2 -translate-y-1/2 h-fit flex-col p-6 z-50"
         aria-label="Quick navigation"
       >
-        <div className="bg-navy/80 backdrop-blur-xl rounded-[3rem] p-4 flex flex-col gap-4 shadow-[40px_0_60px_rgba(0,0,0,0.4)] border border-white/5">
+        <div className="bg-navy/80 backdrop-blur-xl rounded-[3rem] p-4 flex flex-col gap-4 shadow-[-40px_0_60px_rgba(0,0,0,0.4)] border border-white/5">
           {/* Logo avatar */}
           <div className="w-12 h-12 rounded-full overflow-hidden mb-4 ring-2 ring-teal ring-offset-4 ring-offset-navy">
             <Image
