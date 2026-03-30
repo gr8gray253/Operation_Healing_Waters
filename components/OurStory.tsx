@@ -63,7 +63,7 @@ export default function OurStory() {
               Captain Derrious Austin started Operation Healing Waters with one belief: nature heals. For veterans carrying the invisible weight of service — PTSD, depression, anxiety, the kind of isolation that sneaks up on you — a day on the water can do more than any waiting room.
             </p>
             <p>
-              Based out of the Florida Panhandle, Derrious opens his boat — free of charge — to veterans, first responders, and young people from underserved communities. Every trip is more than fishing. It&apos;s conversation, mentorship, and room to breathe.
+              Based out of Southeast Louisiana, Derrious opens his boat — free of charge — to veterans, first responders, and young people from underserved communities. Every trip is more than fishing. It&apos;s conversation, mentorship, and room to breathe.
             </p>
             <p>
               Our secondary mission is building a permanent waterfront event space and community hub that serves the Gulf Coast for generations. Every donation moves us closer to that vision.

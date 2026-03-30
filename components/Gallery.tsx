@@ -9,7 +9,7 @@ const images = [
   { src: '/images/gallery-1.jpg', alt: 'Fishing outing with participants on the Gulf Coast' },
   { src: '/images/gallery-2.jpg', alt: 'Veterans and youth on a guided fishing trip' },
   { src: '/images/gallery-3.jpg', alt: 'Participants enjoying a day of charter fishing' },
-  { src: '/images/gallery-4.jpg', alt: 'Sunset view from the boat on the Florida Panhandle' },
+  { src: '/images/gallery-4.jpg', alt: 'Sunset view from the boat in Southeast Louisiana' },
   { src: '/images/gallery-5.jpg', alt: 'Participants fishing from the pier' },
 ]
 

@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://operationhealingwaters.org'),
   title: 'Operation Healing Waters | Veteran & Youth Fishing Therapy',
   description:
-    'Free guided fishing outings for veterans with PTSD and underprivileged youth. 100% of donations go to mission. Florida Panhandle. Coast Guard approved.',
+    'Free guided fishing outings for veterans with PTSD and underprivileged youth. 100% of donations go to mission. Southeast Louisiana. Coast Guard approved.',
   keywords: [
     'veteran fishing therapy',
     'PTSD healing outdoors',
     'Operation Healing Waters',
-    'veteran nonprofit Florida',
+    'veteran nonprofit Louisiana',
     'youth fishing mentorship',
   ],
   openGraph: {

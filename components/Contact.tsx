@@ -124,7 +124,7 @@ export default function Contact() {
               </div>
 
               {status === 'error' && (
-                <p className="font-body text-red-400 text-sm" role="alert">Hmm, that didn&apos;t go through. Give it another shot, or just email us at derrious09@gmail.com — we&apos;ll get you sorted.</p>
+                <p className="font-body text-red-400 text-sm" role="alert">Hmm, that didn&apos;t go through. Give it another shot, or just email us at support@operationhealingwaters.org — we&apos;ll get you sorted.</p>
               )}
 
               <button
@@ -156,13 +156,13 @@ export default function Contact() {
                 <p className="font-body text-white text-lg font-semibold group-hover:text-gold transition-colors">(850) 319-8909</p>
               </div>
             </a>
-            <a href="mailto:derrious09@gmail.com" className="flex items-start gap-4 group cursor-pointer">
+            <a href="mailto:support@operationhealingwaters.org" className="flex items-start gap-4 group cursor-pointer">
               <div className="w-12 h-12 bg-gold/15 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-gold/25 transition-colors">
                 <Mail size={22} className="text-gold" aria-hidden="true" />
               </div>
               <div>
                 <p className="font-body text-white/85 text-xs font-medium uppercase tracking-wider mb-1">Email</p>
-                <p className="font-body text-white text-base font-semibold group-hover:text-gold transition-colors">derrious09@gmail.com</p>
+                <p className="font-body text-white text-base font-semibold group-hover:text-gold transition-colors">support@operationhealingwaters.org</p>
               </div>
             </a>
             <div className="flex items-start gap-4">

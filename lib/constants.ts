@@ -5,7 +5,7 @@ export const ZEFFY_DONATE_URL = 'https://www.zeffy.com/en-US/donation-form/opera
 export const CONTACT = {
   phone: '(850) 319-8909',
   phoneTel: '8503198909',
-  email: 'derrious09@gmail.com',
+  email: 'support@operationhealingwaters.org',
   name: 'Captain Derrious Austin',
 } as const
 
