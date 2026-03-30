@@ -34,7 +34,7 @@ export default function Contact() {
     }
   }
 
-  const inputCls = 'w-full bg-white/12 border border-white/35 rounded-xl px-4 py-3 font-body text-white placeholder-white/60 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all'
+  const inputCls = 'w-full bg-white/10 border border-white/35 rounded-xl px-4 py-3 font-body text-white placeholder-white/60 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all'
   const labelCls = 'block font-body text-white/80 text-xs font-medium mb-1.5'
 
   return (

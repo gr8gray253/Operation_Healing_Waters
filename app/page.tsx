@@ -35,13 +35,13 @@ export default function Home() {
         <Programs />
         <WaveDivider from="navy" to="off-white" />
         <DonationTiers />
-        <WaveDivider from="off-white" to="navy" />
+        <WaveDivider from="off-white" to="teal-wash" />
         <CharterPricing />
-        <WaveDivider from="navy" to="off-white" />
+        <WaveDivider from="teal-wash" to="navy" />
         <Gallery />
-        <WaveDivider from="off-white" to="navy" />
-        <SocialFeed />
         <WaveDivider from="navy" to="off-white" />
+        <SocialFeed />
+        <WaveDivider from="off-white" to="navy" />
         <Contact />
       </main>
       <Footer />
