@@ -94,10 +94,10 @@ export default function Contact() {
               <div>
                 <label htmlFor="groupSize" className={labelCls}>Group Size</label>
                 <select id="groupSize" name="groupSize" value={form.groupSize} onChange={handleChange} className={inputCls}>
-                  <option value="">Select group size</option>
-                  <option value="2">2 People — $600</option>
-                  <option value="3">3 People — $700</option>
-                  <option value="4">4 People — $800</option>
+                  <option value="" className="bg-navy text-white">Select group size</option>
+                  <option value="2" className="bg-navy text-white">2 People — $600</option>
+                  <option value="3" className="bg-navy text-white">3 People — $700</option>
+                  <option value="4" className="bg-navy text-white">4 People — $800</option>
                 </select>
               </div>
               <fieldset className="border-0 p-0 m-0">
