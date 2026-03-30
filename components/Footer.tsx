@@ -77,10 +77,10 @@ export default function Footer() {
               Instagram: @reel.ofishal
             </a>
             <a
-              href="mailto:derrious09@gmail.com"
+              href="mailto:support@operationhealingwaters.org"
               className="font-body text-white/60 hover:text-gold text-sm transition-colors duration-200 cursor-pointer flex items-center h-11"
             >
-              derrious09@gmail.com
+              support@operationhealingwaters.org
             </a>
             <a
               href="tel:8503198909"
